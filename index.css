@@ -23,3 +23,18 @@
 nav ul {
     margin: 0 20% 0 0;
 }
+
+.nav-link {
+    font-size: 14px;
+    color: #000;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: blue;
+}
+
+.nav-link.active {
+    color: blue;
+}
