@@ -25,16 +25,16 @@ nav ul {
 }
 
 .nav-link {
-    font-size: 14px;
+    font-size: 12px;
     color: #000;
     text-decoration: none;
     transition: 0.3s;
 }
 
 .nav-link:hover {
-    color: blue;
+    color: #0000ff;
 }
 
 .nav-link.active {
-    color: blue;
+    color: #0000ff;
 }
