@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 350px) and (max-width: 480px) {
+    .navbar{
+        padding: 15px 25px;
+    }
+
+    .mainul {
+        display: none;
+    }
+
+    .resp {
+        display: block;
+    }
+
+    .respul {
+        display: none;
+    }
+
+    .respul li{
+        height: 30px;
+        list-style: none;
+    }
+
+    .resp:hover .respul{
+        display: block;
+    }
+
+    .sample {
+        width: 15%;
+        height: 50px;
+        margin: 0 0 0 2%;
+        font-size: 22px;
+    }
+}
