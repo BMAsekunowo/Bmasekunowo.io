@@ -49,10 +49,10 @@
 }
 
 .respul {
-    width: 120px;
+    width: 115px;
     font-size: 14px;
     top: 60px;
-    left: 69%;
+    right: 0%;
     background-color: #fff;
     transition-duration: 5s;
     position: absolute;

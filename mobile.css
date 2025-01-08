@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-@media screen and (min-width: 350px) and (max-width: 480px) {
+@media screen and (min-width: 180px) and (max-width: 380px) {
     .navbar{
         padding: 15px 25px;
     }
@@ -32,6 +32,76 @@
 
     .sample {
         width: 15%;
+        height: 50px;
+        margin: 0 0 0 2%;
+        font-size: 22px;
+    }
+}
+
+@media screen and (min-width: 381px) and (max-width: 480px) {
+    .navbar{
+        padding: 15px 25px;
+    }
+
+    .mainul {
+        display: none;
+    }
+
+    .resp {
+        display: block;
+    }
+
+    .respul {
+        display: none;
+    }
+
+    .respul li{
+        height: 30px;
+        list-style: none;
+    }
+
+    .resp:hover .respul{
+        display: block;
+    }
+
+    .sample {
+        width: 13%;
+        height: 50px;
+        margin: 0 0 0 2%;
+        font-size: 22px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+    .navbar{
+        padding: 15px 25px;
+    }
+
+    .mainul {
+        display: none;
+    }
+
+    .resp {
+        display: block;
+    }
+
+    .respul {
+        display: none;
+        width: 200px;
+        font-size: 16px;
+    }
+
+    .respul li{
+        height: 40px;
+        list-style: none;
+    }
+
+    .resp:hover .respul{
+        display: block;
+    }
+
+    .sample {
+        width: 7%;
         height: 50px;
         margin: 0 0 0 2%;
         font-size: 22px;
