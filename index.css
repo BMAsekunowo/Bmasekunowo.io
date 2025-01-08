@@ -5,23 +5,23 @@
 }
 
 body {
-    background-color: #333b4f;
+    background-color: #28283d;
 }
 
 .sample {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 3.5%;
+    width: 50.4px;
     height: 50px;
     margin: 0 0 0 20%;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 22px;
     font-weight: bold;
     background-color: #333b4f;
-    color: yellow;
-    box-shadow: yellow 2px 2px 0 1px;
-    border-left: yellow 2px dotted;
+    color: #ffff00;
+    box-shadow: #ffff00 2px 2px 0 1px;
+    border-left: #ffff00 2px dotted;
 }
 
 .navbar {
@@ -45,7 +45,7 @@ body {
 }
 
 .nav-link.active {
-    color: yellow;
+    color: #ffff00;
 }
 
 .resp {
@@ -57,7 +57,7 @@ body {
     font-size: 14px;
     top: 60px;
     right: 0%;
-    background-color: #fff;
+    background-color: #28283d; /* 333b4f */
     transition-duration: 5s;
     position: absolute;
 }
