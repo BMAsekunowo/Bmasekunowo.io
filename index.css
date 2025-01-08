@@ -19,9 +19,9 @@ body {
     font-size: 22px;
     font-weight: bold;
     background-color: #333b4f;
-    color: #f01f08;
-    box-shadow: #f01f08 2px 2px 0 1px;
-    /* border-left: #f01f08 2px dotted; */
+    color: yellow;
+    box-shadow: yellow 2px 2px 0 1px;
+    border-left: yellow 2px dotted;
 }
 
 .navbar {
@@ -41,11 +41,11 @@ body {
 }
 
 .nav-link:hover {
-    color: yellow;
+    color: #f01f08;
 }
 
 .nav-link.active {
-    color: #f01f08;
+    color: yellow;
 }
 
 .resp {
