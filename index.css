@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #333b4f;
+}
+
 .sample {
     display: flex;
     justify-content: center;
@@ -14,10 +18,10 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 22px;
     font-weight: bold;
-    background-color: #fff;
-    color: #182153;
-    box-shadow: #182153 2px 2px 0 1px;
-    border-left: #182153 2px dotted;
+    background-color: #333b4f;
+    color: #f01f08;
+    box-shadow: #f01f08 2px 2px 0 1px;
+    /* border-left: #f01f08 2px dotted; */
 }
 
 .navbar {
@@ -31,17 +35,17 @@
 
 .nav-link {
     font-size: 12px;
-    color: #000;
+    color: #707a8a;
     text-decoration: none;
     transition: 0.3s;
 }
 
 .nav-link:hover {
-    color: #0000ff;
+    color: yellow;
 }
 
 .nav-link.active {
-    color: #0000ff;
+    color: #f01f08;
 }
 
 .resp {
