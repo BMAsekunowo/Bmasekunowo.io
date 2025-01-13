@@ -27,6 +27,7 @@ body {
 
 .navbar {
     padding: 15px 30px;
+    background-color: #28283d;
 }
 
 .mainul {
@@ -66,4 +67,23 @@ body {
 .respul li{
     height: 30px;
     list-style: none;
+}
+
+.banner {
+    position: relative;
+    height: 100vh;
+}
+
+.phdiv {
+    width: 30%;
+}
+
+.textdiv {
+    width: 30%;
+    font-size: 40px;
+}
+
+.imgcont {
+    width: 40%;
+    position: relative;
 }
