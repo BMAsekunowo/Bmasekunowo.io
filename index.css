@@ -74,6 +74,7 @@
     right: 0;
     width: 40%;
     height: 100vh;
+    background-color: #28283d;
     background-image: url('images/personal2mod.png'); 
     background-size: contain; 
     background-repeat: no-repeat; 
@@ -86,17 +87,12 @@
 }
 
 .textdiv {
-    width: 50%;
+    width: 60%;
     height: 100vh;
     font-size: 40px;
+    background-color: #28283d;
     display: flex;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
 }
 
-.imgcont {
-    width: 100%;
-    position: relative;
-    height: 100vh;
-    background-color: #28283d;
-}
