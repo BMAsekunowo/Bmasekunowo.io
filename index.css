@@ -75,16 +75,12 @@ body {
     width: 40%;
     height: 100vh;
     background-color: #28283d;
-    background-image: url('images/personal2mod.png'); 
+    background-image: url('images/personal2mod.png');
     background-size: contain; 
     background-repeat: no-repeat; 
     background-position: center right;
     position: fixed; 
     z-index: -1;
-}
-
-.phdiv {
-    width: 30%;
 }
 
 .textdiv {
@@ -93,7 +89,90 @@ body {
     font-size: 40px;
     background-color: #28283d;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 10%;
+    overflow: hidden;
+    animation: slideIn 2s ease-out forwards;
 }
 
+@keyframes slideIn {
+    from {
+      transform: translateX(-100vw);
+    }
+    to {
+      transform: translateX(0); 
+    }
+}
+
+.animated-text {
+    font-size: 34px;
+    font-weight: bold;
+    align-items: center;
+    min-width: 280px;
+    position: relative;
+  }
+
+.animated-text::before {
+    animation: expertise 20s infinite;
+    color: #ffff00;
+  }
+
+.animated-text span{
+    position: relative;
+}
+
+.animated-text span::before{
+    content: "Software Engineering.";
+    color: #ffff00;
+}
+
+.animated-text span::after{
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    background-color: #28283d;
+    border-left: 2px solid #ffff00;
+    right: -8px;
+    animation: cursor .8s infinite, typing 25s steps(21) infinite;
+}
+
+@keyframes cursor {
+    to{
+        border-left: 2px solid #28283d;
+    }
+}
+
+@keyframes expertise {
+    0%,20%{
+        content: "Software Engineering."
+    }
+
+    21%,40%{
+        content: "Finance."
+    }
+
+    41%,60%{
+        content: "Day Trading."
+    }
+
+    61%,80%{
+        content: "Business Development."
+    }
+
+    81%,100%{
+        content: "Teaching."
+    }
+}
+
+@keyframes typing {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 8px);
+    }
+}
