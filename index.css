@@ -71,8 +71,8 @@ body {
 
 .banner {
     top: 80px;
-    left: 0;
-    width: 100%;
+    right: 0;
+    width: 40%;
     height: 100vh;
     background-image: url('images/personal2mod.png'); 
     background-size: contain; 
@@ -86,13 +86,12 @@ body {
 }
 
 .textdiv {
-    width: 100%;
+    width: 50%;
     height: 100vh;
     font-size: 40px;
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
-    position: relative;
 }
 
 .imgcont {
