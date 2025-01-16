@@ -80,6 +80,7 @@ body {
     background-repeat: no-repeat; 
     background-position: center right;
     position: fixed; 
+    z-index: -1;
 }
 
 .phdiv {
