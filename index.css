@@ -74,6 +74,10 @@ body {
 }
 
 /* Banner Styling */
+ /* .section2{
+    opacity: 0.8;
+} */
+
 .banner {
     top: 80px;
     right: 0;
@@ -102,7 +106,7 @@ body {
     width: 45%;
     height: 100vh;
     font-size: 70px;
-    background-color: #28283d;
+    background-color: transparent;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -139,7 +143,7 @@ body {
     height: 100vh;
     background-color: #28283d;
     background-image: url('images/aesthetics.png');
-    opacity: 0.5;
+    opacity: 0.2;
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 1;
