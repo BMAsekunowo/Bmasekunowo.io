@@ -110,7 +110,8 @@ body {
     font-size: 34px;
     font-weight: bold;
     align-items: center;
-    min-width: 280px;
+    width: 100%;
+    height: auto;
     position: relative;
   }
 
@@ -121,7 +122,8 @@ body {
 .animated-text span::before{
     content: "Software Engineering.";
     color: #ffff00;
-    animation: expertise 30s infinite;
+    overflow: hidden;
+    animation: expertise 35s infinite;
 }
 
 .animated-text span::after{
@@ -132,7 +134,7 @@ body {
     background-color: #28283d;
     border-left: 2px solid #ffff00;
     right: -8px;
-    animation: cursor .8s infinite, typing 25s steps(21) infinite;
+    animation: cursor .8s infinite, typing 25s steps(22) infinite;
 }
 
 @keyframes cursor {
@@ -147,7 +149,7 @@ body {
     }
 
     21%,40%{
-        content: "Finance."
+        content: "Accounting & Finance."
     }
 
     41%,60%{
