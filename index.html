@@ -11,16 +11,16 @@
     <link rel="stylesheet" href="mobile.css">
     <!-- <script src="index.js"></script> -->
 </head>
-<body class="">
+<body data-bs-spy="scroll" data-bs-target="#navbarScrollSpy" data-bs-offset="50" tabindex="0">
                 <!-- Logo and Navbar section -->
-    <section class="sticky-top z-1020 topsection">
+    <section class="sticky-top z-1020 topsection" id="section-1">
     <nav class="d-flex overflow-hidden justify-content-between align-items-center shadow navbar">
         <div class="rounded-circle sample">
             B
         </div>
 
         <ul class="list-unstyled gap-5 fs-6 mainul">
-            <li><a href="index.html" class="nav-link active">ABOUT ME</a></li>
+            <li><a href="#section-2" class="nav-link">ABOUT ME</a></li>
             <li><a href="#section-3" class="nav-link">RESUME</a></li>
             <li><a href="" class="dropdown-toggle nav-link">SERVICES</a></li>
             <li><a href="" class="nav-link">PORTFOLIO</a></li>
@@ -42,7 +42,7 @@
     </nav>
     </section>
                       <!--End of Logo and Navbar section-->
-    <section class="d-flex m-0 section2">
+    <section class="d-flex m-0" id="section-2">
         <div class="text-light fw-bold textdiv">
             <div class="textcover">   
                 <p class="">I<span>'</span>M <br>BOLUWATIFE <br> ASEKUNOWO<span>.</span></p>
@@ -72,7 +72,8 @@
         <button class="cta-button">DOWNLOAD RESUME</button>
     </div>
 
-    <div class="shadow prodiv" id="section-3">
+    <section id="section-3">
+    <div class="shadow prodiv">
         <div class="progress-cover">
             <h1 class="text-light fw-bold">VERSATILE EXPERTISE</h1>
             <p class="text-light">UNVEILING A MULTIDISCIPLINARY SKILLSET</p>
@@ -148,6 +149,7 @@
             </div>
         </div>
     </div>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
