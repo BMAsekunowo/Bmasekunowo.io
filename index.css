@@ -25,11 +25,11 @@ body {
     color: #ffff00;
     box-shadow: #ffff00 2px 2px 0 1px;
     border-left: #ffff00 2px dotted;
-    animation: swipe .30s infinite;
+    transition: all .30s ease-out;
 }
 
 .sample:hover{
-    box-shadow: #f01f08 0px 2px 0 0px;
+    box-shadow: #f01f08 0px 2px 2px 0px;
     border-left: none;
     border-right: #f01f08 2px dotted;
     color: #f01f08;
@@ -213,10 +213,11 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0 auto 80px; /* Center icon and add space below */
+    transition: all .30s ease-out;
 }
 
 .circle-icon:hover{
-    box-shadow: #f01f08 0px 2px 0 0px;
+    box-shadow: #f01f08 0px 2px 2px 0px;
     border-left: none;
     border-right: #f01f08 2px dotted;
     color: #f01f08;
