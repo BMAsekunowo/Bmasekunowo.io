@@ -100,14 +100,22 @@ body {
     background-repeat: no-repeat;
     background-position: center right;
     background-attachment: fixed;
-    z-index: -1;
+    transition: all 2s ease-in;
+    animation: slideLeft 2s ease-out;
 }
 
-.banner.inactive{
-    position: relative;
-    top: 0; /* Adjust top position as needed */
-    right: auto; /* Reset right position */
-    z-index: auto; /* Reset stacking order */
+.banner:hover {
+    opacity: 1;
+}
+
+/* Slide-right Animation */
+@keyframes slideLeft {
+    from {
+        transform: translateY(+100%);
+    }
+    to {
+        transform: translateY(-20%);
+    }
 }
 
 /* Text Division Styling */
@@ -136,10 +144,10 @@ body {
 /* Slide-in Animation */
 @keyframes slideIn {
     from {
-        transform: translateX(-100vw);
+        transform: translateY(-100%);
     }
     to {
-        transform: translateX(0);
+        transform: translateY(0);
     }
 }
 
