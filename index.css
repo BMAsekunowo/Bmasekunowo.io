@@ -293,27 +293,129 @@ h1 {
 
 .skill-bar {
     width: 100%;
-    background-color: #444;
+    background-color: transparent;
     height: 10px;
     position: relative;
     overflow: hidden;
     border-radius: 5px;
 }
 
-.skill-bar-fill {
+.skill-bar-fill1 {
     width: 0%;
     height: 100%;
     background-color: #ffff00;
-    animation: skillFill 3s ease-out forwards;
+    animation: skillFill1 3s ease-out forwards;
 }
 
-@keyframes skillFill {
+@keyframes skillFill1 {
     from{
         width: 0%;
     }
 
     to{
         width: 80%;
+    }
+}
+
+.skill-bar-fill2 {
+    width: 0%;
+    height: 100%;
+    background-color: #ffff00;
+    animation: skillFill2 3s ease-out forwards;
+}
+
+@keyframes skillFill2 {
+    from{
+        width: 0%;
+    }
+
+    to{
+        width: 40%;
+    }
+}
+
+.skill-bar-fill3 {
+    width: 0%;
+    height: 100%;
+    background-color: #ffff00;
+    animation: skillFill3 3s ease-out forwards;
+}
+
+@keyframes skillFill3 {
+    from{
+        width: 0%;
+    }
+
+    to{
+        width: 30%;
+    }
+}
+
+.skill-bar-fill4 {
+    width: 0%;
+    height: 100%;
+    background-color: #ffff00;
+    animation: skillFill4 3s ease-out forwards;
+}
+
+@keyframes skillFill4 {
+    from{
+        width: 0%;
+    }
+
+    to{
+        width: 50%;
+    }
+}
+
+.skill-bar-fill5 {
+    width: 0%;
+    height: 100%;
+    background-color: #ffff00;
+    animation: skillFill5 3s ease-out forwards;
+}
+
+@keyframes skillFill5 {
+    from{
+        width: 0%;
+    }
+
+    to{
+        width: 70%;
+    }
+}
+
+.skill-bar-fill6 {
+    width: 0%;
+    height: 100%;
+    background-color: #ffff00;
+    animation: skillFill6 3s ease-out forwards;
+}
+
+@keyframes skillFill6 {
+    from{
+        width: 0%;
+    }
+
+    to{
+        width: 75%;
+    }
+}
+
+.skill-bar-fill7 {
+    width: 0%;
+    height: 100%;
+    background-color: #ffff00;
+    animation: skillFill7 3s ease-out forwards;
+}
+
+@keyframes skillFill7 {
+    from{
+        width: 0%;
+    }
+
+    to{
+        width: 90%;
     }
 }
 
