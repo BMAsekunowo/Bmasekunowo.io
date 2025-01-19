@@ -285,10 +285,10 @@ h1 {
 }
 
 .skill-name {
-    display: flex;
-    justify-content: space-between;
+    opacity: 0;
     margin-bottom: 5px;
     color: #fff;
+    animation: fadeText1 3s ease-in forwards;
 }
 
 .skill-bar {
@@ -423,7 +423,18 @@ h1 {
 }
 
 .percentage {
+    opacity: 0;
     font-size: 15px;
     color: #fff;
+    animation: fadeText1 3s ease-in forwards;
+}
+
+@keyframes fadeText1 {
+    from {
+        opacity: 0; /* Start hidden */
+    }
+    to {
+        opacity: 1; /* Fade in */
+    }
 }
 
