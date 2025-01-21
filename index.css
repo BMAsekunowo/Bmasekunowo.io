@@ -88,6 +88,10 @@ body {
     opacity: 0.8;
 } */
 
+#section-2{
+    display: flex;
+}
+
 .banner {
     top: 80px;
     right: 0;
@@ -160,21 +164,8 @@ body {
     font-weight: normal;
 }
 
-/* Nested Scrollable Div */
-.textdiv2 {
-    width: 100%;
-    height: 100vh;
-    font-size: 70px;
-    background-color: rgba(40, 40, 61, 0.1);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5%;
-    overflow-y: auto; 
-    z-index: 1; 
-    position: relative; 
-    animation: slideIn 2s ease-out forwards;
+#section-2alt {
+    display: none;
 }
 
 /* Floating Div Styling */
@@ -254,6 +245,7 @@ body {
 
 /*Section 3 */
 .prodiv {
+    position: relative;
     width: 100%;
     height: 1400px;
     background-color: rgba(40, 40, 61, 0.1);
@@ -268,16 +260,19 @@ body {
 }
 
 .progress-cover {
-    position: absolute;
+    position: relative;
     width: 60%;
     margin: 15% 20% 0 20%;
     gap: 50px;
     background-color: transparent;
 }
 
-h1 {
-    text-align: center;
+.skillhead {
     font-size: 40px;
+}
+
+.skillunveil {
+    font-size: 18px;
 }
 
 .skill {

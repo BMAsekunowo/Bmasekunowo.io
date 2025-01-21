@@ -5,8 +5,9 @@
 }
 
 @media screen and (min-width: 180px) and (max-width: 380px) {
+    /* Section 1 containing Nav */
     .navbar{
-        padding: 15px 25px;
+        padding: 12px 2%;
     }
 
     .mainul {
@@ -34,6 +35,155 @@
         height: 50px;
         margin: 0 0 0 2%;
         font-size: 22px;
+    }
+
+    #section-2{
+        display: none;
+    }
+
+    .floating-div{
+        display: none;
+    }
+
+    .portfolio{
+        display: none;
+    }
+
+    .services{
+        display: none;
+    }
+
+    .contact{
+        display: none;
+    }
+
+    .xtra{
+        display: none;
+    }
+    /* Section 2 containing About & Resume */
+    #section-2alt {
+        display: block;
+    }
+
+    .textcoveralt {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        margin: 0 5% 0 5%;
+        padding: 50px 0;
+        width: 90%;
+        height: auto;
+        background-color: #28283d;
+    }
+
+    .mname{
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    .mname span{
+       color: #ffff00;
+       font-weight: bold;
+    }
+
+    .expertisealt{
+        font-size: 22px;
+        font-weight: light;
+    }
+
+    /* Floating Div Styling */
+    .floating-divalt {
+        position: relative; 
+        margin: 0;
+        width: 100%;
+        height: auto;
+        padding: 60px 8px;
+        background-color: #1a1b2f;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        color: #ffffff;
+        border: #ffff00 2px dotted;
+    }
+
+    /* Circular Icon */
+    .circle-iconalt {
+        position: relative;
+        width: 80px;
+        height: 80px;
+        color: #ffff00;
+        background-color: rgba(26, 27, 47, 0.8); /*Transparent effect */
+        box-shadow: #ffff00 2px 2px 0 1px;
+        border-left: #ffff00 2px dotted;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 36px;
+        font-weight: bold;
+        border-radius: 50%; /* Circular shape */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto 60px; /* Center icon and add space below */
+        transition: all .30s ease-out;
+    }
+
+    .circle-iconalt:hover{
+        box-shadow: #f01f08 0px 2px 2px 0px;
+        border-left: none;
+        border-right: #f01f08 2px dotted;
+        color: #f01f08;
+        cursor: pointer;
+    }
+
+    /* Description Text */
+    .altdescription {
+        font-size: 18px;
+        line-height: 1.6;
+        color: #ffffff;
+        margin-bottom: 60px;
+        padding: 0 20px; /* Add horizontal padding for better readability */
+    }
+
+    /* Call-to-Action Button */
+    .altcta-button {
+        background-color: transparent;
+        color: #ffff00; /* Green text */
+        border: 1px solid #ffff00;
+        padding: 15px 30px; /* Larger button for emphasis */
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+    }
+
+    .altcta-button:hover {
+        background-color: #ffff00;
+        color: #1a1b2f; /* Dark blue on hover */
+    }
+
+    /*Section 3 containing various skill set levels*/
+    .prodiv {
+        height: 100svb;
+        background-size: cover;
+    }
+
+    .progress-cover {
+        width: 80%;
+        margin: 10% 5% 0 5%;
+    }
+
+    .skillhead {
+        font-size: 23px;
+    }
+
+    .skillunveil {
+        font-size: 18px;
+    }
+
+    .skill {
+        margin: 15px 0 0 0;
     }
 }
 
