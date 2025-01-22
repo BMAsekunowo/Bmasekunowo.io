@@ -474,7 +474,7 @@ body {
     height: 100%;
     border-radius: 20px;
     background-color: transparent;
-    background-image: url(images/IMG_3477.PNG);
+    background-image: url('images/IMG_3477.PNG');
     background-size: cover;
     animation: SlideInRight 2s ease-out forwards;
 }
@@ -496,7 +496,7 @@ body {
     height: 100%;
     border-radius: 20px;
     background-color: transparent;
-    background-image: url(images/IMG_3477.PNG);
+    background-image: url('images/IMG_3477.PNG');
     background-size: contain;
     animation: SlideInUp 2s ease-out forwards;
 }
@@ -551,7 +551,7 @@ body {
     height: 100%;
     border-radius: 10px;
     background-color: transparent;
-    background-image: url(images/IMG_3477.PNG);
+    background-image: url("images/IMG_3477.PNG");
     background-size: contain;
 }
 
@@ -562,7 +562,7 @@ body {
     height: 100%;
     border-radius: 10px;
     background-color: transparent;
-    background-image: url(images/IMG_3477.PNG);
+    background-image: url('images/IMG_3477.PNG');
     background-size: contain;
 }
 
@@ -573,19 +573,33 @@ body {
     height: 48.44%; /* 155px/320 */
     border-radius: 10px;
     background-color: transparent;
-    background-image: url(images/IMG_3477.PNG);
+    background-image: url('images/IMG_3477.PNG');
     background-size: contain;
 }
 
-.portfolio{
-    width: 100%;
-    height: 100vh;
-    background-color: #4c5466;
+#section-5 {
+    width: 80%;
+    height: 2000px;
+    left: 10%;
+    background: 
+        linear-gradient(to bottom, 
+            #28283d 0%, 
+            #28283d 10%, 
+            transparent 10%, 
+            transparent 90%, 
+            #28283d 90%, 
+            #28283d 100% 
+        ),
+        url('images/aestheticsn.jpg'); /* Background image */
+    background-size: contain; 
+    background-position: center; 
+    background-repeat: no-repeat;
 }
 
 .xtra{
     width: 100%;
     height: 100vh;
+    background-color: #4c4c4c;
 }
 
 
