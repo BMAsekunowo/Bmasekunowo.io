@@ -184,3 +184,59 @@ document.addEventListener("DOMContentLoaded", function () {
         element.style.animationPlayState = "paused"; // Pause animation initially
     });
 });
+
+
+
+//Floating Contact Script
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("contact-form");
+    const inputs = form.querySelectorAll("input, textarea");
+
+    // Function to validate input
+    function validateField(field) {
+        const errorMessage = field.nextElementSibling; // Assuming error messages follow each input
+        if (field.hasAttribute("required") && !field.value.trim()) {
+            errorMessage.textContent = `Please enter a valid ${field.placeholder.toLowerCase()}`;
+            errorMessage.style.display = "block"; // Show error message
+        } else if (field.type === "email" && !validateEmail(field.value)) {
+            errorMessage.textContent = "Please enter a valid email address.";
+            errorMessage.style.display = "block";
+        } else {
+            errorMessage.textContent = ""; // Clear error message
+            errorMessage.style.display = "none"; // Hide error message
+        }
+    }
+
+    // Function to validate email
+    function validateEmail(email) {
+        const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return regex.test(email);
+    }
+
+    // Attach blur event to each input
+    inputs.forEach(input => {
+        input.addEventListener("blur", function () {
+            validateField(input);
+        });
+    });
+
+    // Form submission event
+    form.addEventListener("submit", function (event) {
+        event.preventDefault(); // Prevent form submission for validation
+
+        let isFormValid = true;
+
+        // Validate all inputs
+        inputs.forEach(input => {
+            validateField(input);
+            if (input.hasAttribute("required") && !input.value.trim()) {
+                isFormValid = false;
+            }
+        });
+
+        if (isFormValid) {
+            alert("Form submitted successfully!");
+            form.reset(); // Clear form
+        }
+    });
+});
