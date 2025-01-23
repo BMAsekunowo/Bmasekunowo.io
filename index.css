@@ -695,7 +695,7 @@ body {
 
 /* Timeline Item */
 .timeline-item {
-    width: 45%;
+    width: 45%; /* 540/1200 */
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     padding: 20px;
@@ -718,7 +718,7 @@ body {
     content: "";
     position: absolute;
     top: 2%; /* Vertically center the dot relative to the item */
-    right: -62.5px; /* Position the dot to the left edge of the tree line */
+    right: -12.5%; /* -67.5px/540 */
     transform: translateY(-50%);
     width: 15px;
     height: 15px;
@@ -739,7 +739,7 @@ body {
     content: "";
     position: absolute;
     top: 2%; /* Vertically center the dot relative to the item */
-    left: -62.5px; /* Position the dot to the right edge of the tree line */
+    left: -12.5%; /* -67.5px/540 */
     transform: translateY(-50%);
     width: 15px;
     height: 15px;
@@ -812,6 +812,18 @@ body {
 
 .xtra{
     width: 100%;
-    height: 100vh;
-    background-color: #4c4c4c;
+    height: 500px;
+    background-color: transparent;
+    /* background-color: rgba(40, 40, 61, 0.1); */
+    background-image: url('images/finance.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed ;
+    z-index: -1;
+}
+
+/* Footbar Styling */
+.footbar {
+    padding: 20px 30px;
+    background-color: #28283d;
 }
