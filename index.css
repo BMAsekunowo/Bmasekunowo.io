@@ -736,7 +736,7 @@ body {
 .timeline-item.right::before {
     content: "";
     position: absolute;
-    top: 2%; /* Vertically center the dot relative to the item */
+    top: 2%;
     left: -12.5%; /* -67.5px/540 */
     transform: translateY(-50%);
     width: 15px;
@@ -814,14 +814,14 @@ body {
     top: 98%;
     left: 20%;
     width: 60%;
-    height: 600px;
+    height: 600px; /* Increased height for better spacing */
     max-width: 1200px;
     background-color: #1a1b2f;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
     padding: 40px;
     display: flex;
     justify-content: space-between;
-    align-items: center; /* Center vertically */
+    align-items: flex-start; /* Align content to the top */
     z-index: 5;
     transform: translateY(-50%);
     color: #ffffff;
@@ -840,6 +840,10 @@ body {
     font-weight: bold;
     margin-bottom: 10px;
     text-transform: uppercase;
+}
+
+.contact-details p {
+    margin-bottom: 20px;
 }
 
 .social-links {
@@ -864,14 +868,14 @@ body {
     width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly; /* Even distribution */
-    height: 100%; /* Utilize full height */
+    justify-content: space-between; /* Evenly space out form fields */
+    height: 100%;
 }
 
 .contact-form form {
     display: flex;
     flex-direction: column;
-    gap: 15px; /* Spacing between form fields */
+    gap: 20px; /* Increased spacing between form fields */
 }
 
 .contact-form .form-group {
@@ -879,10 +883,15 @@ body {
     gap: 15px; /* Space between first and last name fields */
 }
 
+.fn{
+    display: flex;
+    flex-direction: column;
+}
+
 .contact-form input,
 .contact-form textarea {
     width: 100%;
-    padding: 12px;
+    padding: 14px; /* Adjusted for uniform look */
     font-size: 16px;
     border: 1px solid #cccccc;
     background-color: #ffffff;
@@ -891,12 +900,17 @@ body {
     transition: border-color 0.3s ease;
 }
 
-/* Yellow Focus and Hover */
-.contact-form input:focus,
-.contact-form textarea:focus,
+/* Green Focus and Hover */
+
 .contact-form input:hover,
 .contact-form textarea:hover {
-    border-color: #f01f08;
+    border-color: #f1eba1;
+    background-color: #f1eba1;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+    background-color: #fff;
 }
 
 /* Error Message Styling */
@@ -908,7 +922,7 @@ body {
 
 /* Submit Button */
 .contact-form button {
-    padding: 12px;
+    padding: 14px;
     background-color: #ffff00;
     color: #1a1b2f;
     font-size: 16px;
@@ -917,6 +931,7 @@ body {
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    border-radius: 0; /* Removed border radius */
 }
 
 .contact-form button:hover {

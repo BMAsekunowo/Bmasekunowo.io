@@ -309,24 +309,29 @@
                 <div class="contact-form">
                     <form id="contact-form">
                         <div class="form-group">
-                            <input
-                                type="text"
-                                id="first-name"
-                                name="first-name"
-                                placeholder="First name *"
-                                autocomplete="given-name"
-                                required
-                            >
-                            <div class="error-message"></div>
-                            <input
-                                type="text"
-                                id="last-name"
-                                name="last-name"
-                                placeholder="Last name *"
-                                autocomplete="family-name"
-                                required
-                            >
-                            <div class="error-message"></div>
+                           <div class="fn">
+                                <input
+                                    type="text"
+                                    id="first-name"
+                                    name="first-name"
+                                    placeholder="First name *"
+                                    autocomplete="given-name"
+                                    required
+                                >
+                                <div class="error-message"></div>
+                            </div>
+
+                            <div class="fn">
+                                <input
+                                    type="text"
+                                    id="last-name"
+                                    name="last-name"
+                                    placeholder="Last name *"
+                                    autocomplete="family-name"
+                                    required
+                                >
+                                <div class="error-message"></div>
+                            </div>
                         </div>
                         <input
                             type="email"
@@ -345,6 +350,7 @@
                             autocomplete="tel"
                         >
                         <div class="error-message"></div>
+                        
                         <textarea
                             id="message"
                             name="message"
