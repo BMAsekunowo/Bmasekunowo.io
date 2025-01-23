@@ -577,23 +577,236 @@ body {
     background-size: contain;
 }
 
+/* Section 5 Styling */
 #section-5 {
-    width: 80%;
-    height: 2000px;
-    left: 10%;
+    width: 100%; /* Full-width background */
+    height: 2500px; /* Adjusts height based on content */
     background: 
+        radial-gradient(circle at center, 
+            rgba(40, 40, 61, 0.9) 70%, /* Smoothly fade the sides */
+            #28283d 100%), /* Solid color for the sides */
         linear-gradient(to bottom, 
-            #28283d 0%, 
-            #28283d 10%, 
-            transparent 10%, 
-            transparent 90%, 
-            #28283d 90%, 
-            #28283d 100% 
+            #28283d 0%, /* Solid top color */
+            rgba(40, 40, 61, 0.9) 20%, /* Gradual fade into the image */
+            rgba(0, 0, 0, 0) 40%, /* Transparent middle for image */
+            #28283de6 80%, /* Fade out of the image */
+            #28283d 100% /* Solid bottom color */
         ),
-        url('images/aestheticsn.jpg'); /* Background image */
-    background-size: contain; 
-    background-position: center; 
-    background-repeat: no-repeat;
+        url('images/aestheticsn.jpg') no-repeat center/cover; /* Replace with your image */
+    padding: 80px 0; /* Adds vertical padding */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Content Container */
+#section-5 .content {
+    width: 90%; /* Set the content width to 90% */
+    margin: 0 5%; /* Add 5% margin on both left and right sides */
+    text-align: center;
+}
+
+/* Portfolio Section */
+.portfolio {
+    margin-bottom: 100px;
+}
+
+.portfolio h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.portfolio p {
+    font-size: 18px;
+    color: #cccccc;
+}
+
+/* Portfolio Grid */
+.portfolio-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Spacing between items */
+}
+
+/* Portfolio Item */
+.portfolio-item {
+    width: 300px; /* Adjust to match exact width */
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    position: relative;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.portfolio-caption {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7); /* Text readability enhancement */
+}
+
+/* Experience Section */
+.experience {
+    margin-top: 50px;
+}
+
+.experience h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.experience p {
+    font-size: 18px;
+    color: #cccccc;
+}
+
+/* Timeline */
+.timeline {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    padding: 20px 0;
+}
+
+/* Vertical Line (Tree) */
+.timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 4px;
+    height: 100%;
+    background-color: #00ff00; /* Green line */
+    transform: translateX(-50%);
+}
+
+/* Timeline Item */
+.timeline-item {
+    width: 45%;
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    opacity: 0; /* Start hidden for animation */
+    animation: fadeInEffect 1s ease-out forwards;
+}
+
+/* Left Items */
+.timeline-item.left {
+    float: left;
+    clear: both;
+    text-align: right;
+    animation-name: slideFromLeft; /* Slide in from the left */
+}
+
+.timeline-item.left::before {
+    content: "";
+    position: absolute;
+    top: 2%; /* Vertically center the dot relative to the item */
+    right: -62.5px; /* Position the dot to the left edge of the tree line */
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    background-color: #00ff00; /* Green circle */
+    border-radius: 50%;
+    z-index: 2; /* Ensure it appears above the line */
+}
+
+/* Right Items */
+.timeline-item.right {
+    float: right;
+    clear: both;
+    text-align: left;
+    animation-name: slideFromRight; /* Slide in from the right */
+}
+
+.timeline-item.right::before {
+    content: "";
+    position: absolute;
+    top: 2%; /* Vertically center the dot relative to the item */
+    left: -62.5px; /* Position the dot to the right edge of the tree line */
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    background-color: #00ff00; /* Green circle */
+    border-radius: 50%;
+    z-index: 2; /* Ensure it appears above the line */
+}
+
+/* Year Styling */
+.timeline-item .year {
+    font-size: 18px;
+    color: #00ff00; /* Green year */
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Title */
+.timeline-item h3 {
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+/* Description */
+.timeline-item p {
+    font-size: 16px;
+    color: #cccccc;
+    line-height: 1.6;
+}
+
+/* Clearfix for Timeline */
+.timeline:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Animations */
+@keyframes slideFromLeft {
+    from {
+        transform: translateX(-100%); /* Slide from left */
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0); /* End at original position */
+        opacity: 1;
+    }
+}
+
+@keyframes slideFromRight {
+    from {
+        transform: translateX(100%); /* Slide from right */
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0); /* End at original position */
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInEffect {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .xtra{
@@ -601,5 +814,3 @@ body {
     height: 100vh;
     background-color: #4c4c4c;
 }
-
-

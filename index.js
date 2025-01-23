@@ -143,3 +143,44 @@ document.addEventListener("DOMContentLoaded", function () {
         element.style.animationPlayState = "paused"; // Pause animation initially
     });
 });
+
+
+/* Animation for timeline section */
+document.addEventListener("scroll", function () {
+    // Select the timeline section and animated elements
+    const section = document.querySelector(".timeline");
+    const animatedElements = document.querySelectorAll(".timeline-item");
+
+    if (!section) return; // Exit if the section is not found
+
+    // Navbar height and total height above (adjust if needed)
+    const navbarHeight = 80; // Height of the fixed navbar
+    const totalHeightAbove = 4700; // Approximate height of sections above
+
+    // Get the position of the section relative to the viewport
+    const sectionPosition = section.getBoundingClientRect().top;
+
+    // Calculate the trigger point for animation
+    const triggerPoint = window.innerHeight - navbarHeight;
+
+    // Trigger animations when the section is in focus
+    if (sectionPosition < triggerPoint && sectionPosition > -totalHeightAbove) {
+        animatedElements.forEach((element) => {
+            element.style.animationPlayState = "running"; // Start animation
+        });
+    } else {
+        // Pause animations when the section is out of view
+        animatedElements.forEach((element) => {
+            element.style.animationPlayState = "paused"; // Pause animation
+        });
+    }
+});
+
+// Ensure animations are paused on page load
+document.addEventListener("DOMContentLoaded", function () {
+    const animatedElements = document.querySelectorAll(".timeline-item");
+
+    animatedElements.forEach((element) => {
+        element.style.animationPlayState = "paused"; // Pause animation initially
+    });
+});
