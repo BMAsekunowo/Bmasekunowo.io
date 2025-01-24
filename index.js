@@ -240,3 +240,13 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+
+//Scrollspy
+document.addEventListener('DOMContentLoaded', function () {
+    // Manually initialize ScrollSpy
+    const scrollSpy = new bootstrap.ScrollSpy(document.body, {
+        target: '#navbar-example',
+        offset: 80 // Match your navbar height
+    });
+});
