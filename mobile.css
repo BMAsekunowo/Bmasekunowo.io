@@ -182,7 +182,7 @@
     /*Section 3 containing various skill set levels*/
     .prodiv {
         height: 100svb;
-        background-size: cover;
+        background-size: contain;
     }
 
     .progress-cover {
@@ -380,7 +380,7 @@
     /*Section 3 containing various skill set levels*/
     .prodiv {
         height: 100svb;
-        background-size: cover;
+        background-size: contain;
     }
 
     .progress-cover {
@@ -580,7 +580,7 @@
     /*Section 3 containing various skill set levels*/
     .prodiv {
         height: 100svb;
-        background-size: cover;
+        background-size: contain;
     }
 
     .progress-cover {
