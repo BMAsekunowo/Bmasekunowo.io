@@ -811,7 +811,7 @@ body {
 /* Floating Div Styling */
 .contact-floating {
     position: absolute;
-    top: 98%;
+    top: 100%;
     left: 20%;
     width: 60%;
     height: 600px; /* Increased height for better spacing */
