@@ -250,3 +250,33 @@ document.addEventListener("DOMContentLoaded", function () {
 //         offset: 80 // Match your navbar height
 //     });
 // });
+
+
+//Scroll to Top
+document.addEventListener("DOMContentLoaded", function () {
+    const scrollButton = document.querySelector('.scroll-to-top');
+
+    if (scrollButton) {
+        // Initially hide the button
+        scrollButton.style.display = 'none';
+
+        // Show/hide the button on scroll
+        window.addEventListener('scroll', function () {
+            if (window.scrollY > 300) {
+                scrollButton.style.display = 'flex'; // Ensure it's flex for centering the arrow
+            } else {
+                scrollButton.style.display = 'none';
+            }
+        });
+
+        // Scroll to top on click
+        scrollButton.addEventListener('click', function () {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth',
+            });
+        });
+    } else {
+        console.error('Scroll to top button not found!');
+    }
+});
