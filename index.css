@@ -863,7 +863,7 @@ body {
 }
 
 .social-links a:hover {
-    color: #ffff00; /* Green hover effect */
+    color: #ffff00; 
 }
 
 /* Contact Form Section */
@@ -951,12 +951,28 @@ body {
     background-image: url('images/finance.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment:fixed ;
+    background-attachment:fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     z-index: -1;
+}
+
+.social-link{
+    display: none;
 }
 
 /* Footbar Styling */
 .footbar {
     padding: 20px 30px;
     background-color: #28283d;
+    display: flex;
+    gap: 15%;
+    align-items: center;
+}
+
+.lln{
+    display: flex;
+    justify-content: center;
 }
