@@ -481,10 +481,12 @@ body {
 @keyframes SlideInRight {
     from{
         transform: translateX(-100%);
+        position: fixed;
     }
 
     to{
         transform: translateX(0);
+        position: relative;
     }
 }
 
@@ -791,14 +793,14 @@ body {
 
 @keyframes slideFromRight {
     from {
+        position: fixed;
         transform: translateX(100%); /* Slide from right */
         opacity: 0;
-        position: fixed;
     }
     to {
+        position: relative;
         transform: translateX(0); /* End at original position */
         opacity: 1;
-        position: relative;
     }
 }
 
