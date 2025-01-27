@@ -182,7 +182,7 @@
     /*Section 3 containing various skill set levels*/
     .prodiv {
         height: 100svb;
-        background-size: contain;
+        background-size: 100svb;
     }
 
     .progress-cover {

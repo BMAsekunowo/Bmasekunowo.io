@@ -250,7 +250,7 @@ body {
     height: 1400px;
     background-color: rgba(40, 40, 61, 0.1);
     background-image: url('images/aesthetics.png');
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-attachment:fixed ;
     z-index: -1;
