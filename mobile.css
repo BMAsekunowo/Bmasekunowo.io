@@ -557,6 +557,17 @@
         flex-direction: column;
         gap: 20px;
     }
+
+    .footext{
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .lln{
+        display: flex;
+        justify-content: center;
+    }
 }
 
 @media screen and (min-width: 481px) and (max-width: 1024px) {

@@ -972,7 +972,11 @@ body {
     align-items: center;
 }
 
+.footext{
+    display: flex;
+    gap: 3px;
+}
+
 .lln{
     display: flex;
-    justify-content: center;
 }
