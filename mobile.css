@@ -75,13 +75,13 @@
         width: 90%;
         height: auto;
         background-color: #28283d;
-        animation: slideIn 2s ease-out forwards;
+        /* animation: slideIn 2s ease-out forwards; */
     }
 
     /* Slide-in Animation */
     @keyframes slideIn {
         from {
-            transform: translateY(200%);
+            transform: translateY(100%);
             z-index: -5;
         }
         to {
@@ -93,6 +93,7 @@
     .mname{
         font-size: 40px;
         font-weight: bold;
+        animation: slideIn 2s ease-out forwards;
     }
 
     .mname span{
@@ -103,6 +104,7 @@
     .expertisealt{
         font-size: 22px;
         font-weight: light;
+        animation: slideIn 2s ease-out forwards;
     }
 
     /* Floating Div Styling */
@@ -121,6 +123,7 @@
         border-right: #ffff00 1px solid;
         border-top: #ffff00 1px solid;
         border-bottom: none;
+        animation: slideIn 2s ease-out forwards;
     }
 
     /* Circular Icon */
@@ -200,6 +203,189 @@
 
     .skill {
         margin: 15px 0 0 0;
+    }
+
+    .services{
+        width: 100%;
+        height: auto;
+        padding: 50px 0;
+    }
+
+    .servicescov{
+        flex-direction: column;
+        margin: 30px 5% 0 5%;
+        width: 90%;
+        height: auto;
+        gap: 10px;
+    }
+
+    .serv1{
+        margin: 0;
+        width: 100%;
+        height: 250px;
+    }
+
+    .serv2{
+        margin: 0;
+        width: 100%;
+        height: 250px;
+    }
+
+    .servcov1{
+        width: 100%;
+        height: 500px;
+    }
+
+    .servhead {
+        font-size: 27px;        
+    }
+
+    .servunv {
+        font-size: 22px;
+    }
+
+    #section-5{
+        height: 4600px;
+        padding: 50px 0;
+    }
+
+    .content{
+        margin: 0 5%;
+        width: 90%;
+    }
+
+    .portfolio{
+        margin: 40px 0 40px 0;
+        width: 100%;
+    }
+
+    .porthead {
+        font-size: 27px;        
+    }
+
+    .portunv {
+        font-size: 22px;
+    }
+
+    .portfolio-grid{
+        justify-content: unset;
+        width: 100%;
+        margin: 0;
+        height: 1000px;
+        flex-direction: column;
+    }
+
+    .portfolio-item {
+        width: 100%;
+        height: 320px;
+        position: relative;
+    }
+    
+    .portfolio-item img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .exphead {
+        font-size: 27px;
+        margin: 0 5% 20px 5%;  
+    }
+
+    .expunv {
+        font-size: 22px;
+        margin: 0 5%; 
+    }
+
+    .timeline{
+        margin: 0;
+        width: 100%;
+    }
+
+    .timeline::before{
+        display: none;
+    }
+
+    .timeline-item{
+        width: 95%;
+    }
+
+    .timeline-item.left::before{
+        display: none;
+    }
+
+    .timeline-item.right::before{
+        display: none;
+    }
+
+    .timeline-item.right {
+        right: 0;
+    }
+
+    .timeline::after{
+        display: none;
+    }
+
+    .contact-floating{
+        flex-direction: column;
+        top: 89.7%;
+        left: 5%;
+        width: 90%;
+        gap: 50px;
+        height: 950px;
+        border-bottom: none;
+    }
+
+    .social-links{
+        display: none;
+    }
+
+    .contact-details, .contact-form{
+        width: 100%
+    }
+
+    .form-group{
+        flex-direction: column;
+    }
+
+    .xtra{
+        height: 300px;
+    }
+
+    .social-link {
+        display: block;
+        gap: 10px;
+        justify-content: flex-start;
+    }
+    
+    .social-link a {
+        color: #ffffff;
+        font-size: 40px;
+        transition: color 0.3s ease;
+    }
+    
+    .social-link a:hover {
+        color: #ffff00; 
+    }
+
+    .sochead {
+        font-size: 27px;
+    }
+
+    .footbar{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footext{
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .lln{
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -767,5 +953,188 @@
 
     .skill {
         margin: 20px 0 0 0;
+    }
+
+    .services{
+        width: 100%;
+        height: auto;
+        padding: 50px 0;
+    }
+
+    .servicescov{
+        flex-direction: column;
+        margin: 30px 5% 0 5%;
+        width: 90%;
+        height: auto;
+        gap: 10px;
+    }
+
+    .serv1{
+        margin: 0;
+        width: 100%;
+        height: 250px;
+    }
+
+    .serv2{
+        margin: 0;
+        width: 100%;
+        height: 250px;
+    }
+
+    .servcov1{
+        width: 100%;
+        height: 500px;
+    }
+
+    .servhead {
+        font-size: 27px;        
+    }
+
+    .servunv {
+        font-size: 22px;
+    }
+
+    #section-5{
+        height: 4600px;
+        padding: 50px 0;
+    }
+
+    .content{
+        margin: 0 5%;
+        width: 90%;
+    }
+
+    .portfolio{
+        margin: 40px 0 40px 0;
+        width: 100%;
+    }
+
+    .porthead {
+        font-size: 27px;        
+    }
+
+    .portunv {
+        font-size: 22px;
+    }
+
+    .portfolio-grid{
+        justify-content: unset;
+        width: 100%;
+        margin: 0;
+        height: 1000px;
+        flex-direction: column;
+    }
+
+    .portfolio-item {
+        width: 100%;
+        height: 320px;
+        position: relative;
+    }
+    
+    .portfolio-item img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .exphead {
+        font-size: 27px;
+        margin: 0 5% 20px 5%;  
+    }
+
+    .expunv {
+        font-size: 22px;
+        margin: 0 5%; 
+    }
+
+    .timeline{
+        margin: 0;
+        width: 100%;
+    }
+
+    .timeline::before{
+        display: none;
+    }
+
+    .timeline-item{
+        width: 95%;
+    }
+
+    .timeline-item.left::before{
+        display: none;
+    }
+
+    .timeline-item.right::before{
+        display: none;
+    }
+
+    .timeline-item.right {
+        right: 0;
+    }
+
+    .timeline::after{
+        display: none;
+    }
+
+    .contact-floating{
+        flex-direction: column;
+        top: 89.7%;
+        left: 5%;
+        width: 90%;
+        gap: 50px;
+        height: 950px;
+        border-bottom: none;
+    }
+
+    .social-links{
+        display: none;
+    }
+
+    .contact-details, .contact-form{
+        width: 100%
+    }
+
+    .form-group{
+        flex-direction: column;
+    }
+
+    .xtra{
+        height: 300px;
+    }
+
+    .social-link {
+        display: block;
+        gap: 10px;
+        justify-content: flex-start;
+    }
+    
+    .social-link a {
+        color: #ffffff;
+        font-size: 40px;
+        transition: color 0.3s ease;
+    }
+    
+    .social-link a:hover {
+        color: #ffff00; 
+    }
+
+    .sochead {
+        font-size: 27px;
+    }
+
+    .footbar{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footext{
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .lln{
+        display: flex;
+        justify-content: center;
     }
 }
