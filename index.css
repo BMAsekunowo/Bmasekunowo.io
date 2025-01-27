@@ -107,14 +107,14 @@ body {
     background-position: center right;
     background-attachment: fixed;
     transition: all 2s ease-in;
-    animation: slideUp 2s ease-out;
+    /* animation: slideUp 2s ease-out; */
 }
 
 .banner:hover {
     opacity: 1;
 }
 
-/* Slide-right Animation */
+/* Slide-right Animation
 @keyframes slideUp{
     from {
         transform: translateY(+100%);
@@ -124,7 +124,7 @@ body {
         transform: translateY(-20%);
         z-index: -3;
     }
-}
+} */
 
 /* Text Division Styling */
 .textdiv {
@@ -608,16 +608,17 @@ body {
     margin-bottom: 100px;
 }
 
-.portfolio h1 {
+.porthead {
     font-size: 36px;
     margin-bottom: 20px;
     text-transform: uppercase;
-    color: #ffffff;
+    color: #fff;
 }
 
-.portfolio p {
+.portunv {
     font-size: 18px;
-    color: #cccccc;
+    color: #fff;
+    text-transform: uppercase;
 }
 
 /* Portfolio Grid */
@@ -633,7 +634,6 @@ body {
 .portfolio-item {
     width: 400px;
     height: 100%;
-    border-radius: 0px;
     position: relative;
 }
 
@@ -659,22 +659,23 @@ body {
     margin-top: 50px;
 }
 
-.experience h1 {
+.exphead {
     font-size: 36px;
     margin-bottom: 20px;
     text-transform: uppercase;
     color: #ffffff;
 }
 
-.experience p {
+.expunv {
     font-size: 18px;
-    color: #cccccc;
+    color: #ffffff;
+    text-transform: uppercase;
 }
 
 /* Timeline */
 .timeline {
     width: 80%;
-    margin: 0 auto;
+    margin: 0 10%;
     position: relative;
     padding: 20px 0;
 }

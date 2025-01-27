@@ -243,21 +243,6 @@
         display: none;
     }
 
-    .portfolio{
-        display: none;
-    }
-
-    .services{
-        display: none;
-    }
-
-    .contact{
-        display: none;
-    }
-
-    .xtra{
-        display: none;
-    }
     /* Section 2 containing About & Resume */
     #section-2alt {
         display: block;
@@ -273,24 +258,23 @@
         width: 90%;
         height: auto;
         background-color: #28283d;
-        animation: slideIn 2s ease-out forwards;
+        /* animation: slideIn 2s ease-out forwards; */
     }
 
     /* Slide-in Animation */
     @keyframes slideIn {
         from {
-            transform: translateY(200%);
-            z-index: -5;
+            transform: translateY(100%);
         }
         to {
             transform: translateY(0);
-            z-index: -5;
         }
     }
 
     .mname{
         font-size: 50px;
         font-weight: bold;
+        animation: slideIn 2s ease-out forwards;
     }
 
     .mname span{
@@ -301,6 +285,7 @@
     .expertisealt{
         font-size: 26px;
         font-weight: light;
+        animation: slideIn 2s ease-out forwards;
     }
 
     /* Floating Div Styling */
@@ -319,6 +304,7 @@
         border-right: #ffff00 1px solid;
         border-top: #ffff00 1px solid;
         border-bottom: none;
+        animation: slideIn 2s ease-out forwards;
     }
 
     /* Circular Icon */
@@ -380,7 +366,7 @@
     /*Section 3 containing various skill set levels*/
     .prodiv {
         height: 100svb;
-        background-size: 100svw 100svh;
+        background-size: 100% 100%;
     }
 
     .progress-cover {
@@ -398,6 +384,149 @@
 
     .skill {
         margin: 20px 0 0 0;
+    }
+
+    .services{
+        width: 100%;
+        height: auto;
+        padding: 50px 0;
+    }
+
+    .servicescov{
+        flex-direction: column;
+        margin: 30px 5% 0 5%;
+        width: 90%;
+        height: auto;
+        gap: 10px;
+    }
+
+    .serv1{
+        margin: 0;
+        width: 100%;
+        height: 250px;
+    }
+
+    .serv2{
+        margin: 0;
+        width: 100%;
+        height: 250px;
+    }
+
+    .servcov1{
+        width: 100%;
+        height: 500px;
+    }
+
+    .servhead {
+        font-size: 27px;        
+    }
+
+    .servunv {
+        font-size: 22px;
+    }
+
+    #section-5{
+        height: 4350px;
+        padding: 50px 0;
+    }
+
+    .content{
+        margin: 0 5%;
+        width: 90%;
+    }
+
+    .portfolio{
+        margin: 40px 0 40px 0;
+        width: 100%;
+    }
+
+    .porthead {
+        font-size: 27px;        
+    }
+
+    .portunv {
+        font-size: 22px;
+    }
+
+    .portfolio-grid{
+        justify-content: unset;
+        width: 100%;
+        margin: 0;
+        height: 1000px;
+        flex-direction: column;
+    }
+
+    .portfolio-item {
+        width: 100%;
+        height: 320px;
+        position: relative;
+    }
+    
+    .portfolio-item img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .exphead {
+        font-size: 27px;
+        margin: 0 5% 20px 5%;  
+    }
+
+    .expunv {
+        font-size: 22px;
+        margin: 0 5%; 
+    }
+
+    .timeline{
+        margin: 0;
+        width: 100%;
+    }
+
+    .timeline::before{
+        display: none;
+    }
+
+    .timeline-item{
+        width: 95%;
+    }
+
+    .timeline-item.left::before{
+        display: none;
+    }
+
+    .timeline-item.right::before{
+        display: none;
+    }
+
+    .timeline-item.right {
+        right: 0;
+    }
+
+    .timeline::after{
+        display: none;
+    }
+
+    .contact-floating{
+        flex-direction: column;
+        top: 89%;
+        left: 5%;
+        width: 90%;
+        gap: 50px;
+        height: 950px;
+        border-bottom: none;
+    }
+
+    .social-links{
+        display: none;
+    }
+
+    .contact-details, .contact-form{
+        width: 100%
+    }
+
+    .form-group{
+        flex-direction: column;
     }
 }
 
