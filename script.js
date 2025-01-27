@@ -280,3 +280,4 @@ document.addEventListener("DOMContentLoaded", function () {
         console.error('Scroll to top button not found!');
     }
 });
+

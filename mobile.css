@@ -14,23 +14,6 @@
         display: none;
     }
 
-    .resp {
-        display: block;
-    }
-
-    .respul {
-        display: none;
-    }
-
-    .respul li{
-        height: 30px;
-        list-style: none;
-    }
-
-    .resp:hover .respul{
-        display: block;
-    }
-
     .sample {
         height: 50px;
         margin: 0 0 0 2%;
@@ -398,23 +381,6 @@
         display: none;
     }
 
-    .resp {
-        display: block;
-    }
-
-    .respul {
-        display: none;
-    }
-
-    .respul li{
-        height: 30px;
-        list-style: none;
-    }
-
-    .resp:hover .respul{
-        display: block;
-    }
-
     .sample {
         height: 50px;
         margin: 0 0 0 2%;
@@ -765,25 +731,6 @@
 
     .mainul {
         display: none;
-    }
-
-    .resp {
-        display: block;
-    }
-
-    .respul {
-        display: none;
-        width: 200px;
-        font-size: 16px;
-    }
-
-    .respul li{
-        height: 40px;
-        list-style: none;
-    }
-
-    .resp:hover .respul{
-        display: block;
     }
 
     .sample {
