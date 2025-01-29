@@ -288,6 +288,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var menuToggle = document.getElementById("menu-toggle");
     var mobileNav = document.getElementById("mobile-nav");
     var closeMenu = document.getElementById("close-menu");
+    var navLinks = document.querySelectorAll(".mobile-nav a");
 
     if (menuToggle && mobileNav && closeMenu) {
         menuToggle.addEventListener("click", function() {
@@ -296,6 +297,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
         closeMenu.addEventListener("click", function() {
             mobileNav.style.display = "none";
+        });
+
+        navLinks.forEach(function(link) {
+            link.addEventListener("click", function() {
+                mobileNav.style.display = "none";
+            });
         });
     } else {
         console.error("One or more menu elements not found in the DOM.");

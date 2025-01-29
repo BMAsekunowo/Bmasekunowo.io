@@ -10,6 +10,10 @@
         padding: 12px 2%;
     }
 
+    .menu-toggle {
+        display: block;
+    }
+    
     .mainul {
         display: none;
     }
@@ -181,7 +185,7 @@
     .prodiv {
         height: 100svb;
         background-image: url('images/altaesthetics.png');
-        background-size: 100%;
+        background-size: cover;
     }
 
     .progress-cover {
@@ -345,9 +349,9 @@
     }
 
     .xtra{
-        height: 300px;
+        height: 400px;
         background-image: url('images/xtraback.jpg');
-        background-size: 100%;
+        background-size: cover;
     }
 
     .social-link {
@@ -550,7 +554,7 @@
     .prodiv {
         height: 100svb;
         background-image: url('images/altaesthetics.png');
-        background-size: 100svb;
+        background-size: cover;
     }
 
     .progress-cover {
@@ -714,7 +718,7 @@
     }
 
     .xtra{
-        height: 300px;
+        height: 400px;
         background-image: url('images/xtraback.png');
         background-size: cover;
     }
@@ -763,6 +767,10 @@
         padding: 15px 25px;
     }
 
+    .menu-toggle {
+        display: block;
+    }
+    
     .mainul {
         display: none;
     }
@@ -781,21 +789,6 @@
         display: none;
     }
 
-    .portfolio{
-        display: none;
-    }
-
-    .services{
-        display: none;
-    }
-
-    .contact{
-        display: none;
-    }
-
-    .xtra{
-        display: none;
-    }
     /* Section 2 containing About & Resume */
     #section-2alt {
         display: block;
@@ -837,7 +830,7 @@
     }
 
     .mname{
-        font-size: 50px;
+        font-size: 70px;
         font-weight: bold;
         animation: slideIn 2s ease-out forwards;
     }
@@ -848,7 +841,7 @@
     }
 
     .expertisealt{
-        font-size: 26px;
+        font-size: 40px;
         font-weight: light;
         animation: slideIn 2s ease-out forwards;
     }
@@ -992,7 +985,7 @@
     }
 
     #section-5{
-        height: 4600px;
+        height: 4300px;
         padding: 50px 0;
     }
 
@@ -1016,8 +1009,8 @@
 
     .portfolio-grid{
         justify-content: unset;
-        width: 100%;
-        margin: 0;
+        width: 80%;
+        margin: 0 10%;
         height: 1000px;
         flex-direction: column;
     }
@@ -1075,7 +1068,7 @@
 
     .contact-floating{
         flex-direction: column;
-        top: 85%;
+        top: 89%;
         left: 5%;
         width: 90%;
         gap: 50px;
@@ -1096,7 +1089,7 @@
     }
 
     .xtra{
-        height: 300px;
+        height: 500px;
     }
 
     .social-link {
