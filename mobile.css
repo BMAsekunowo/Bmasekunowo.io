@@ -168,6 +168,7 @@
     /*Section 3 containing various skill set levels*/
     .prodiv {
         height: 100svb;
+        background-image: url('images/altaesthetics.png');
         background-size: 100svb;
     }
 
@@ -518,7 +519,8 @@
     /*Section 3 containing various skill set levels*/
     .prodiv {
         height: 100svb;
-        background-size: 100% 100%;
+        background-image: url('images/altaesthetics.png');
+        background-size: cover;
     }
 
     .progress-cover {
