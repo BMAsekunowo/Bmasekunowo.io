@@ -565,6 +565,7 @@
         height: 100svb;
         background-image: url('images/altaesthetics.png');
         background-size: cover;
+        background-attachment: fixed;
     }
 
     .prodiv::before {
