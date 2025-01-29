@@ -281,3 +281,23 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+
+
+//YTest
+document.addEventListener("DOMContentLoaded", function() {
+    var menuToggle = document.getElementById("menu-toggle");
+    var mobileNav = document.getElementById("mobile-nav");
+    var closeMenu = document.getElementById("close-menu");
+
+    if (menuToggle && mobileNav && closeMenu) {
+        menuToggle.addEventListener("click", function() {
+            mobileNav.style.display = "flex";
+        });
+
+        closeMenu.addEventListener("click", function() {
+            mobileNav.style.display = "none";
+        });
+    } else {
+        console.error("One or more menu elements not found in the DOM.");
+    }
+});

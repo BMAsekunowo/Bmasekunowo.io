@@ -347,7 +347,7 @@
     .xtra{
         height: 300px;
         background-image: url('images/xtraback.jpg');
-        background-size: contain;
+        background-size: 100%;
     }
 
     .social-link {
@@ -392,6 +392,10 @@
         padding: 15px 2%;
     }
 
+    .menu-toggle {
+        display: block;
+    }
+    
     .mainul {
         display: none;
     }
@@ -546,7 +550,7 @@
     .prodiv {
         height: 100svb;
         background-image: url('images/altaesthetics.png');
-        background-size: contain;
+        background-size: 100svb;
     }
 
     .progress-cover {
@@ -712,7 +716,7 @@
     .xtra{
         height: 300px;
         background-image: url('images/xtraback.png');
-        background-size: contain;
+        background-size: cover;
     }
 
     .social-link {
