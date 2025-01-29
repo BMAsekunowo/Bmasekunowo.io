@@ -181,7 +181,7 @@
     .prodiv {
         height: 100svb;
         background-image: url('images/altaesthetics.png');
-        background-size: contain;
+        background-size: 100%;
     }
 
     .progress-cover {
