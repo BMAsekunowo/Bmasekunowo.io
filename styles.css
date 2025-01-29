@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 /* Body Styling */
 body {
     background-color: #28283d;
@@ -1007,7 +1011,7 @@ body {
 .scroll-to-top {
     position: fixed;
     bottom: 30px;
-    right: 30px;
+    right: 15px;
     width: 50px;
     height: 50px;
     background-color: #2c3e50;
