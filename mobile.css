@@ -185,7 +185,7 @@
     .prodiv {
         height: 100svb;
         background-image: url('images/altaesthetics.png');
-        background-size: cover;
+        object-fit: cover;
     }
 
     .prodiv::before {
@@ -361,7 +361,7 @@
     .xtra{
         height: 400px;
         background-image: url('images/xtraback.jpg');
-        background-size: cover;
+        object-fit: cover;
     }
 
     .social-link {
