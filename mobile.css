@@ -32,21 +32,6 @@
         display: none;
     }
 
-    .portfolio{
-        display: none;
-    }
-
-    .services{
-        display: none;
-    }
-
-    .contact{
-        display: none;
-    }
-
-    .xtra{
-        display: none;
-    }
     /* Section 2 containing About & Resume */
     #section-2alt {
         display: block;
