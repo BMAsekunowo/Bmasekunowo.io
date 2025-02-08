@@ -345,6 +345,7 @@
         height: 400px;
         background-image: url('images/xtraback.png');
         background-size: auto 100%;
+        background-attachment: local;
     }
 
     .social-link {
@@ -548,6 +549,7 @@
         background-image: url('images/altaesthetics.png');
         background-size: auto 739px;
         background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent black */
+        background-attachment: local;
     }
 
     .prodiv::before {
@@ -724,6 +726,7 @@
         height: 400px;
         background-image: url('images/xtraback.png');
         background-size: auto 100%;
+        background-attachment: local;
     }
 
     .social-link {
